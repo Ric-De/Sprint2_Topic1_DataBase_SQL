@@ -1,0 +1,3 @@
+
+db.createCollection( 'Glasses', {validator: {$jsonSchema: {bsonType: 'object',title:'Glasses',required: [         'Suppliers',          'Sales'],properties: {brand: {bsonType: 'array',items: {bsonType: 'string'}},graduation: {bsonType: 'object',
+title:'object',properties: {left_eye: {bsonType: 'double'},right_eye: {bsonType: 'double'}}},frame_type: {enum: },frame_color: {bsonType: 'string'},glass_color: {bsonType: 'string'},price: {bsonType: 'decimal'},Suppliers: {bsonType: 'objectId'},Sales: {bsonType: 'objectId'}}         }      }});  
